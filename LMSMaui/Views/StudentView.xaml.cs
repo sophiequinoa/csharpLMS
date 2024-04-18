@@ -14,4 +14,5 @@ public partial class StudentView : ContentPage
     {
         Shell.Current.GoToAsync("//MainPage");
     }
+
 }

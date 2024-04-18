@@ -1,24 +1,20 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="LMSMaui.Views.InstructorViews.EditCoursesView"
-             Title="EditCoursesView">
+             x:Class="LMSMaui.Views.InstructorViews.AddCourseView"
+             Title="AddCourseView">
     <VerticalStackLayout
             Spacing="25"
             Padding="30,0"
             VerticalOptions="Center">
         <Label 
-            Text="EDIT COURSES VIEW"
+            Text="ADD COURSE VIEW"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
 
         <Button
             Text="Cancel"
             Clicked="CancelClicked"
-            />
-        <Button
-            Text="Add Course"
-            Clicked="AddCourseClicked"
-            />    
+            />  
     </VerticalStackLayout>
 </ContentPage>

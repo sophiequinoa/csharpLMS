@@ -14,4 +14,8 @@ public partial class EditCoursesView : ContentPage
     {
         Shell.Current.GoToAsync("//Instructor");
     }
+	private void AddCourseClicked(object sender, EventArgs e)
+    {
+        Shell.Current.GoToAsync("//AddCourse");
+    }
 }

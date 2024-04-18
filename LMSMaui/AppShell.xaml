@@ -28,6 +28,10 @@
     Title="Edit Students"
     ContentTemplate="{DataTemplate local3:EditStudentsView}"
     Route="EditStudents" />
+     <ShellContent
+    Title="Add Course"
+    ContentTemplate="{DataTemplate local3:AddCourseView}"
+    Route="AddCourse" />
 
 </Shell>
 
