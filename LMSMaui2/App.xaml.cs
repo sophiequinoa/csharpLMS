@@ -1,12 +1,12 @@
-﻿namespace LMSMaui2
-{
-    public partial class App : Application
-    {
-        public App()
-        {
-            InitializeComponent();
+﻿namespace LMSMaui2;
 
-            MainPage = new AppShell();
-        }
-    }
+public partial class App : Application
+{
+	public App()
+	{
+		InitializeComponent();
+
+		MainPage = new AppShell();
+	}
 }
+
