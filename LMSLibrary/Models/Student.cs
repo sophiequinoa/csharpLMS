@@ -11,19 +11,21 @@ namespace LMSLibrary.Models
     {
         public Dictionary<int, double> Grades { get; set; }
 
+        public PersonClassification Classification { get; set; }
 
-        public Student() {
+        public Student()
+        {
             Grades = new Dictionary<int, double>();
-            Classification = PersonClassification.NA;
         }
 
         public override string ToString()
         {
             return $"[{Id}] {Name} - {Classification}";
         }
-
-
     }
 
-
+    public enum PersonClassification
+    {
+        Freshman, Sophomore, Junior, Senior
+    }
 }

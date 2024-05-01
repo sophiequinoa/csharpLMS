@@ -4,7 +4,6 @@ namespace LMSLibrary.Models
     {
         private static int lastId = 0;
 
-        public PersonClassification Classification { get; set; }
         public int Id
         {
             get; private set;
@@ -16,23 +15,11 @@ namespace LMSLibrary.Models
         {
             Name = string.Empty;
             Id = ++lastId;
-            Classification = PersonClassification.NA;
-        }
-
-        public Person(string name)
-        {
-            Name = name;
-            Id = ++lastId;
         }
 
         public override string ToString()
         {
-            return $"[{Id}] {Name} - {Classification}";
-        }
-
-            public enum PersonClassification
-        {
-            Freshman, Sophomore, Junior, Senior, TA, Instructor, NA
+            return $"[{Id}] {Name}";
         }
     }
 }

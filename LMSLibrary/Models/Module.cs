@@ -2,17 +2,34 @@ using System;
 namespace LMSLibrary.Models
 {
 	public class Module
-	{
-        public string Name { get; set; }
-        public string Description { get; set; }
+    {
+        private static int lastId = 0;
+        private int id = 0;
+        public int Id
+        {
+            get
+            {
+                if (id == 0)
+                {
+                    id = ++lastId;
+                }
+                return id;
+            }
+        }
+        public string? Name { get; set; }
+        public string? Description { get; set; }
         public List<ContentItem> Content { get; set; }
 
-        public Module(string name, string description)
-		{
-			Name = name;
-			Description = description;
-			Content = new List<ContentItem>();
-		}
-	}
+        public Module()
+        {
+            Content = new List<ContentItem>();
+        }
+
+        public override string ToString()
+        {
+            return $"{Name}: {Description}\n" +
+                $"{string.Join("\n\t", Content.Select(c => c.ToString()).ToArray())}";
+        }
+    }
 }
 

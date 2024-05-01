@@ -2,17 +2,25 @@ using System;
 namespace LMSLibrary.Models
 {
 	public class ContentItem
-	{
-        public string Name { get; set; }
-        public string Description { get; set; }
-        public string Path { get; set; }
+    {
+        private static int lastId = 0;
 
-        public ContentItem(string name, string description, string path)
-		{
-			Name = name;
-			Description = description;
-			Path = path;
-		}
-	}
+        public int Id
+        {
+            get; private set;
+        }
+        public string? Name { get; set; }
+        public string? Description { get; set; }
+
+        public override string ToString()
+        {
+            return $"{Name}: {Description}";
+        }
+
+        public ContentItem()
+        {
+            Id = ++lastId;
+        }
+    }
 }
 
