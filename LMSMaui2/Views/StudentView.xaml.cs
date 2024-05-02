@@ -14,4 +14,10 @@ public partial class StudentView : ContentPage
     {
         Shell.Current.GoToAsync("//MainPage");
     }
+
+    private void StudentCoursesClicked(object sender, EventArgs e)
+    {
+        Shell.Current.GoToAsync("//StudentCourses");
+    }
+
 }

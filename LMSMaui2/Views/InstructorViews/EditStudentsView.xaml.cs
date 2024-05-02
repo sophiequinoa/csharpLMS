@@ -14,4 +14,14 @@ public partial class EditStudentsView : ContentPage
     {
         Shell.Current.GoToAsync("//Instructor");
     }
+
+    private void AddStudentClicked(object sender, EventArgs e)
+    {
+        Shell.Current.GoToAsync("//AddStudent");
+    }
+
+    private void DeleteStudentClicked(object sender, EventArgs e)
+    {
+        Shell.Current.GoToAsync("//DeleteStudent"); 
+    }
 }

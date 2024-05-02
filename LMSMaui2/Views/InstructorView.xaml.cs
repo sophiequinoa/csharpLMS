@@ -22,4 +22,13 @@ public partial class InstructorView : ContentPage
     {
         Shell.Current.GoToAsync("//EditStudents");
     }
+
+    private void ShowStudentsClicked(object sender, EventArgs e)
+    {
+        Shell.Current.GoToAsync("//ShowStudents");
+    }
+    private void ShowCoursesClicked(object sender, EventArgs e)
+    {
+        Shell.Current.GoToAsync("//ShowCourses");
+    }
 }

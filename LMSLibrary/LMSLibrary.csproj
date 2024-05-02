@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Models\D.cs" />
+    <Compile Remove="Models\FakeDatabase.cs" />
+  </ItemGroup>
+
 </Project>

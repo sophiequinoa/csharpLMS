@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace LMSLibrary.Models
 {
-    public static class FakeDatabase
+    public static class Database
     {
         private static List<Student> students = new List<Student>();
         private static List<Course> courses = new List<Course>();
-        
-        
+
+
         public static List<Student> Student
         {
             get

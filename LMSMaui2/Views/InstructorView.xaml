@@ -24,6 +24,16 @@
                 Text="Edit Students"
                 Clicked="EditStudentsClicked"
                 ></Button>
+            <Button
+                Text="Show List - Students"
+                Clicked="ShowStudentsClicked"
+                ></Button>
+            <Button
+                Text="Show List - Courses"
+                Clicked="ShowCoursesClicked"
+                ></Button>
+            
+                
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

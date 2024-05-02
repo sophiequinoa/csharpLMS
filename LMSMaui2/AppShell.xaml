@@ -6,6 +6,7 @@
     xmlns:local="clr-namespace:LMSMaui2"
     xmlns:local2="clr-namespace:LMSMaui2.Views"
     xmlns:local3="clr-namespace:LMSMaui2.Views.InstructorViews"
+    xmlns:local4="clr-namespace:LMSMaui2.Views.StudentViews"
     Shell.FlyoutBehavior="Disabled">
 
     <ShellContent
@@ -28,6 +29,34 @@
     Title="Edit Students"
     ContentTemplate="{DataTemplate local3:EditStudentsView}"
     Route="EditStudents" />
+    <ShellContent
+    Title="Add a Course"
+    ContentTemplate="{DataTemplate local3:AddCourseView}"
+    Route="AddCourse" />
+    <ShellContent
+    Title="Add a Student"
+    ContentTemplate="{DataTemplate local3:AddStudentView}"
+    Route="AddStudent" />
+    <ShellContent
+        Title="Delete a Student"
+        ContentTemplate="{DataTemplate local3:DeleteStudentView}"
+        Route="DeleteStudent" />
+    <ShellContent
+        Title="Show Student list"
+        ContentTemplate="{DataTemplate local3:ShowStudentsView}"
+        Route="ShowStudents" />
+    <ShellContent
+    Title="Show Courses list"
+    ContentTemplate="{DataTemplate local3:ShowCoursesView}"
+    Route="ShowCourses" />
+    <ShellContent
+        Title="Delete a  Course"
+        ContentTemplate="{DataTemplate local3:DeleteCourseView}"
+        Route="DeleteCourse" />
+    <ShellContent
+    Title="Show your Courses"
+    ContentTemplate="{DataTemplate local4:StudentCoursesView}"
+    Route="StudentCourses" />
 
 </Shell>
 

@@ -1,32 +1,27 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="LMSMaui2.Views.InstructorViews.EditStudentsView"
-             Title="EditStudentsView">
+             x:Class="LMSMaui2.Views.InstructorViews.AddCourseView"
+             Title="AddCourseView">
     <VerticalStackLayout
             Spacing="25"
             Padding="30,0"
             VerticalOptions="Center">
         <Label 
-            Text="EDIT STUDENTS VIEW"
+            Text="ADD COURSES VIEW"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
-       
-  
+
         <Button
             Text="Cancel"
             Clicked="CancelClicked"
             />
+
+
+        <Entry x:Name="nameInput" Text="Enter the class name"/>
         <Button
-        Text="Add a Student"
-        Clicked="AddStudentClicked"
-        />
-
-        <Button
-            Text="Delete a Student"
-            Clicked="DeleteStudentClicked"
-           />
-
-
+            Text="Submit"
+            Clicked="AddNameClicked"
+            />
     </VerticalStackLayout>
 </ContentPage>

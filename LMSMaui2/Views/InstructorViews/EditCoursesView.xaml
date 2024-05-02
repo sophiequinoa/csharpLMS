@@ -11,10 +11,31 @@
             Text="EDIT COURSES VIEW"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
-
+        <Button 
+                Text="Add Course"
+                Clicked="AddCourseClicked"
+                />
+        <Button 
+            Text="Delete Course"
+            Clicked="DeleteCourseClicked"
+        />
         <Button
-            Text="Cancel"
-            Clicked="CancelClicked"
-            />
+                Text="Cancel"
+                Clicked="CancelClicked"
+                />
+
+        <!--Courses-->
+        <VerticalStackLayout>
+            <Label 
+                Text="Courses"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+            <ListView
+                ItemsSource="{Binding Courses.Courses}"
+                SelectedItem="{Binding SelectedCourse.Name}">
+        </ListView>
+
+    </VerticalStackLayout>
+        
     </VerticalStackLayout>
 </ContentPage>

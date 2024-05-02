@@ -13,6 +13,11 @@
             HorizontalOptions="Center" />
 
         <Button
+            Text="View Courses"
+            Clicked="StudentCoursesClicked"
+            />
+        
+        <Button
             Text="Cancel"
             Clicked="CancelClicked"
             />
