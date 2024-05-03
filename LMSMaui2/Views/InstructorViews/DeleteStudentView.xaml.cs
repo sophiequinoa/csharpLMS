@@ -7,9 +7,16 @@ namespace LMSMaui2.Views.InstructorViews
     {
         public DeleteStudentView()
         {
+            InitializeComponent();
         }
         private void CancelClicked(object sender, EventArgs e)
         {
+            Shell.Current.GoToAsync("//EditStudents");
+        }
+
+        private void DeleteStudentClicked(object sender, EventArgs e)
+        { 
+
             Shell.Current.GoToAsync("//EditStudents");
         }
     }

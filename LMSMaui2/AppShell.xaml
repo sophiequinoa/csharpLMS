@@ -57,6 +57,10 @@
     Title="Show your Courses"
     ContentTemplate="{DataTemplate local4:StudentCoursesView}"
     Route="StudentCourses" />
+    <ShellContent
+        Title="Show your Assignments"
+        ContentTemplate="{DataTemplate local4:StudentAssignmentsView}"
+        Route="StudentAssignments" />
 
 </Shell>
 

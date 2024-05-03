@@ -6,6 +6,7 @@ namespace LMSMaui2.Views.InstructorViews
     public partial class ShowStudentsView { 
         public ShowStudentsView()
         {
+            InitializeComponent();
         }
         private void CancelClicked(object sender, EventArgs e)
         {

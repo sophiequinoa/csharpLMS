@@ -7,6 +7,12 @@ namespace LMSMaui2.Views.InstructorViews
     {
         public ShowCoursesView()
         {
+            InitializeComponent();
+            BindingContext = new InstructorViewViewModel();
+        }
+        private void ContentPage_NavigatedTo(object sender, NavigatedToEventArgs e)
+        {
+            (BindingContext as InstructorViewViewModel).RefreshView();
         }
         private void CancelClicked(object sender, EventArgs e)
         {

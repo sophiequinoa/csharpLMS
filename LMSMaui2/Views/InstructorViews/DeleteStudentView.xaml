@@ -12,7 +12,12 @@
             VerticalOptions="Center"
             HorizontalOptions="Center" />
 
-		<Button
+        <Entry x:Name="nameInput" Text="Enter student name"/>
+        <Button
+            Text="Submit"
+            Clicked="DeleteStudentClicked" />
+
+        <Button
             Text="Cancel"
             Clicked="CancelClicked"
            ></Button>

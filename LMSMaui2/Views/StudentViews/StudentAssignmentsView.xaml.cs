@@ -1,11 +1,14 @@
-﻿using LMSLibrary.Models;
-using LMSMaui2.ViewModels;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace LMSMaui2.Views.StudentViews
 {
-    public partial class StudentCoursesView
+    public partial class StudentAssignmentsView
     {
-        public StudentCoursesView()
+        public StudentAssignmentsView()
         {
             InitializeComponent();
         }

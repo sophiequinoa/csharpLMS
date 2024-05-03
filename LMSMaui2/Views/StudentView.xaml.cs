@@ -20,4 +20,9 @@ public partial class StudentView : ContentPage
         Shell.Current.GoToAsync("//StudentCourses");
     }
 
+    private void ViewAssignmentsClicked(object sender, EventArgs e)
+    {
+        Shell.Current.GoToAsync("//StudentAssignments");
+    }
+
 }

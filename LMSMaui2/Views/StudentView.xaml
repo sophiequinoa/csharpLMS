@@ -16,7 +16,11 @@
             Text="View Courses"
             Clicked="StudentCoursesClicked"
             />
-        
+
+        <Button
+            Text="View assignments"
+            Clicked="ViewAssignmentsClicked"/>
+
         <Button
             Text="Cancel"
             Clicked="CancelClicked"
